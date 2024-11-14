@@ -17,6 +17,7 @@
     <!-- ===============================================-->
     <!--    Favicons-->
     <!-- ===============================================-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/img/favicons/favicon-16x16.png">
@@ -67,13 +68,13 @@
       <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section class="py-0">
-        <div class="container-small">
+        <div class="container">
           <div class="ecommerce-topbar">
             <nav class="navbar navbar-expand-lg navbar-light px-0">
               <div class="row gx-0 gy-2 w-100 flex-between-center">
                 <div class="col-auto"><a class="text-decoration-none" href="../../../index.html">
-                    <div class="d-flex align-items-center"><img src="../../../assets/img/icons/logo.png" alt="phoenix" width="27" />
-                      <p class="logo-text ms-2">phoenix</p>
+                    <div class="d-flex align-items-center"><img src="{{ asset('images/logo_kinasih.png') }}" alt="phoenix" width="50" height="50"/>
+                      <p class="logo-text ms-2">Rumah Kinasih</p>
                     </div>
                   </a></div>
                 <div class="col-auto order-md-1">
@@ -82,7 +83,7 @@
                       <div class="theme-control-toggle fa-icon-wait px-2"><input class="form-check-input ms-0 theme-control-toggle-input" type="checkbox" data-theme-control="phoenixTheme" value="dark" id="themeControlToggle" /><label class="mb-0 theme-control-toggle-label theme-control-toggle-light" for="themeControlToggle" data-bs-toggle="tooltip" data-bs-placement="left" title="Switch theme"><span class="icon" data-feather="moon"></span></label><label class="mb-0 theme-control-toggle-label theme-control-toggle-dark" for="themeControlToggle" data-bs-toggle="tooltip" data-bs-placement="left" title="Switch theme"><span class="icon" data-feather="sun"></span></label></div>
                     </li>
                     <li class="nav-item"><a class="nav-link px-2 icon-indicator icon-indicator-primary" href="cart.html" role="button"><span class="text-700" data-feather="shopping-cart" style="height:20px;width:20px;"></span><span class="icon-indicator-number">3</span></a></li>
-                    <li class="nav-item dropdown"><a class="nav-link px-2 icon-indicator icon-indicator-sm icon-indicator-danger" id="navbarTopDropdownNotification" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="text-700" data-feather="bell" style="height:20px;width:20px;"></span></a>
+                    {{-- <li class="nav-item dropdown"><a class="nav-link px-2 icon-indicator icon-indicator-sm icon-indicator-danger" id="navbarTopDropdownNotification" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="text-700" data-feather="bell" style="height:20px;width:20px;"></span></a>
                       <div class="dropdown-menu dropdown-menu-end notification-dropdown-menu py-0 shadow border border-300 navbar-dropdown-caret mt-2" id="navbarDropdownNotfication" aria-labelledby="navbarDropdownNotfication">
                         <div class="card position-relative border-0">
                           <div class="card-header p-2">
@@ -195,7 +196,7 @@
                           </div>
                         </div>
                       </div>
-                    </li>
+                    </li> --}}
                     <li class="nav-item dropdown"><a class="nav-link px-2" id="navbarDropdownUser" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"><span class="text-700" data-feather="user" style="height:20px;width:20px;"></span></a>
                       <div class="dropdown-menu dropdown-menu-end navbar-dropdown-caret py-0 dropdown-profile shadow border border-300 mt-2" aria-labelledby="navbarDropdownUser">
                         <div class="card position-relative border-0">
@@ -245,7 +246,32 @@
       </section><!-- <section> close ============================-->
       <!-- ============================================-->
 
-      <nav class="ecommerce-navbar navbar-expand navbar-light bg-white justify-content-between">
+      <nav class="ecommerce-navbar navbar-expand navbar-light bg-white py-2">
+        <div class="container-fluid justify-content-center">
+          <div class="d-flex justify-content-center">
+            <a class="navbar-brand mx-3" href="homepage.html">Beranda</a>
+            <a class="navbar-brand mx-3" href="products-filter.html">Produk</a>
+            <a class="navbar-brand mx-3" href="checkout.html">Checkout</a>
+          </div>
+        </div>
+      </nav>
+
+      <div style="position: relative; width: 100%;">
+        <img src="{{ asset('images/hero_1.png') }}" alt="Background_2" style="width: 100%; height: auto;">
+    
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center;">
+            <h1 style="font-size: 3.5vw; font-weight: bold; margin-bottom: 5px;">
+                <span style="color: #D49E5F;">Produk Kami</span>
+            </h1>
+            <h1 style="font-size: 3.5vw; font-weight: bold;">
+                <span style="color: #ffffff;">Batik Ciprat Kinasih</span>
+            </h1>
+        </div>
+    </div>
+    
+      
+      
+      {{-- <nav class="ecommerce-navbar navbar-expand navbar-light bg-white justify-content-between">
         <div class="container-small d-flex flex-between-center" data-navbar="data-navbar">
           <div class="dropdown"><button class="btn text-900 ps-0 pe-5 text-nowrap dropdown-toggle dropdown-caret-none" data-category-btn="data-category-btn" data-bs-toggle="dropdown"><span class="fas fa-bars me-2"></span>Category</button>
             <div class="dropdown-menu border py-0 category-dropdown-menu">
@@ -312,65 +338,44 @@
               </div>
             </div>
           </div>
-          <ul class="navbar-nav justify-content-end align-items-center">
-            <li class="nav-item" data-nav-item="data-nav-item"><a class="nav-link ps-0 active" href="homepage.html">Home</a></li>
-            <li class="nav-item" data-nav-item="data-nav-item"><a class="nav-link" href="favourite-stores.html">My Favorites Stores</a></li>
-            <li class="nav-item" data-nav-item="data-nav-item"><a class="nav-link" href="products-filter.html">Products</a></li>
-            <li class="nav-item" data-nav-item="data-nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
-            <li class="nav-item" data-nav-item="data-nav-item"><a class="nav-link" href="shipping-info.html">Shipping Info</a></li>
-            <li class="nav-item" data-nav-item="data-nav-item"><a class="nav-link" href="../admin/add-product.html">Be a vendor</a></li>
-            <li class="nav-item" data-nav-item="data-nav-item"><a class="nav-link" href="order-tracking.html">Track order</a></li>
+          <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="homepage.html">Beranda</a>
+            <a class="navbar-brand" href="products-filter.html">Produk</a>
+            <a class="navbar-brand" href="checkout.html">Checkout</a>
+          </div>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item" data-nav-item="data-nav-item"><a class="nav-link ps-0 active" href="homepage.html">Beranda</a></li>
+            <li class="nav-item" data-nav-item="data-nav-item"><a class="nav-link" href="products-filter.html">Produk</a></li>
             <li class="nav-item" data-nav-item="data-nav-item"><a class="nav-link pe-0" href="checkout.html">Checkout</a></li>
             <li class="nav-item dropdown" data-nav-item="data-nav-item" data-more-item="data-more-item"><a class="nav-link dropdown-toggle dropdown-caret-none fw-bold pe-0" href="javascript: void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-boundary="window" data-bs-reference="parent"> More<span class="fas fa-angle-down ms-2"></span></a>
               <div class="dropdown-menu dropdown-menu-end category-list" aria-labelledby="navbarDropdown" data-category-list="data-category-list"></div>
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> --}}
       <div class="ecommerce-homepage pt-5 mb-9">
 
         <!-- ============================================-->
         <!-- <section> begin ============================-->
-        <section class="py-0">
-          <div class="container-small">
-            <div class="scrollbar">
-              <div class="d-flex justify-content-between"><a class="icon-nav-item" href="#!">
-                  <div class="icon-container mb-2 bg-warning-100 light"><span class="fs-4 uil uil-star text-warning"></span></div>
-                  <p class="nav-label">Deals</p>
-                </a><a class="icon-nav-item" href="#!">
-                  <div class="icon-container mb-2"><span class="fs-4 uil uil-shopping-bag"></span></div>
-                  <p class="nav-label">Grocery</p>
-                </a><a class="icon-nav-item" href="#!">
-                  <div class="icon-container mb-2"><span class="fs-4 uil uil-watch-alt"></span></div>
-                  <p class="nav-label">Fashion</p>
-                </a><a class="icon-nav-item" href="#!">
-                  <div class="icon-container mb-2"><span class="fs-4 uil uil-mobile-android"></span></div>
-                  <p class="nav-label">Mobile</p>
-                </a><a class="icon-nav-item" href="#!">
-                  <div class="icon-container mb-2"><span class="fs-4 uil uil-monitor"></span></div>
-                  <p class="nav-label">Electronics</p>
-                </a><a class="icon-nav-item" href="#!">
-                  <div class="icon-container mb-2"><span class="fs-4 uil uil-estate"></span></div>
-                  <p class="nav-label">Home</p>
-                </a><a class="icon-nav-item" href="#!">
-                  <div class="icon-container mb-2"><span class="fs-4 uil uil-lamp"></span></div>
-                  <p class="nav-label">Dining</p>
-                </a><a class="icon-nav-item" href="#!">
-                  <div class="icon-container mb-2"><span class="fs-4 uil uil-gift"></span></div>
-                  <p class="nav-label">Gifts</p>
-                </a><a class="icon-nav-item" href="#!">
-                  <div class="icon-container mb-2"><span class="fs-4 uil uil-wrench"></span></div>
-                  <p class="nav-label">Tools</p>
-                </a><a class="icon-nav-item" href="#!">
-                  <div class="icon-container mb-2"><span class="fs-4 uil uil-plane-departure"></span></div>
-                  <p class="nav-label">Travel</p>
-                </a><a class="icon-nav-item" href="#!">
-                  <div class="icon-container mb-2"><span class="fs-4 uil uil-palette"></span></div>
-                  <p class="nav-label">Others</p>
-                </a></div>
-            </div>
-          </div><!-- end of .container-->
-        </section><!-- <section> close ============================-->
+            <div class="d-flex justify-content-center mt-2 mb-5">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn me-3" style="background-color: #846848; color: white; border-radius: 20px; padding: 0.5rem 1rem; font-weight: bold; min-width: 200px;">
+                        Batik Ciprat Kinasih
+                    </button>
+                    <button type="button" class="btn me-3" style="background-color: #E7E1DB; color: #525252; border-radius: 20px; padding: 0.5rem 1rem; font-weight: bold; min-width: 200px;">
+                        Pakaian Wanita Pria
+                    </button>
+                    <button type="button" class="btn me-3" style="background-color: #E7E1DB; color: #525252; border-radius: 20px; padding: 0.5rem 1rem; font-weight: bold; min-width: 200px;">
+                        Aksesoris
+                    </button>
+                    <button type="button" class="btn me-3" style="background-color: #E7E1DB; color: #525252; border-radius: 20px; padding: 0.5rem 1rem; font-weight: bold; min-width: 200px;">
+                        Peralatan Sholat
+                    </button>
+                    <button type="button" class="btn" style="background-color: #E7E1DB; color: #525252; border-radius: 20px; padding: 0.5rem 1rem; font-weight: bold; min-width: 200px;">
+                        Tas & Pouch
+                    </button>
+                </div>
+            </div><!-- <section> close ============================-->
         <!-- ============================================-->
 
 
@@ -380,18 +385,24 @@
         <section class="py-0 px-xl-3">
           <div class="container px-xl-0 px-xxl-3">
             <div class="row g-3 mb-9">
-              <div class="col-12">
-                <div class="whooping-banner w-100 rounded-3 overflow-hidden">
-                  <div class="bg-holder z-index--1 product-bg" style="background-image:url(../../../assets/img/e-commerce/whooping_banner_product.png);background-position: bottom right;"></div>
-                  <!--/.bg-holder-->
-                  <div class="bg-holder z-index--1 shape-bg" style="background-image:url(../../../assets/img/e-commerce/whooping_banner_shape_2.png);background-position: bottom left;"></div>
-                  <!--/.bg-holder-->
-                  <div class="banner-text light">
-                    <h2 class="text-warning-300 fw-bolder fs-lg-5 fs-xxl-6">Whooping <span class="gradient-text">60% </span>Off</h2>
-                    <h3 class="fw-bolder fs-lg-3 fs-xxl-5 text-white light">on everyday items</h3>
-                  </div><a class="btn btn-lg btn-primary rounded-pill banner-button" href="#!">Shop Now</a>
+
+                <div class="col-12">
+                    <div class="whooping-banner w-100 rounded-3 overflow-hidden position-relative">
+                        <div style="background-image: url('{{ asset('images/background_batik1.png') }}'); background-size: cover; background-position: center; height: 400px; width: 100%; position: absolute; top: 0; left: 0; z-index: -1;"></div>
+                        <div class="banner-text light" style="position: relative; z-index: 1; text-align: center; padding: 2rem;">
+                            <h2 class="text-warning-300 fw-bolder fs-lg-5 fs-xxl-6">
+                                Whooping <span class="gradient-text">60%</span> Off
+                            </h2>
+                            <h3 class="fw-bolder fs-lg-3 fs-xxl-5 text-white light">
+                                on everyday items
+                            </h3>
+                        </div>
+                        <a href="#!" class="btn btn-lg btn-primary rounded-pill banner-button" style="position: relative; z-index: 1; margin-top: 1rem;">Shop Now</a>
+                    </div>
                 </div>
-              </div>
+                
+                
+
               <div class="col-12 col-xl-6">
                 <div class="gift-items-banner w-100 rounded-3 overflow-hidden">
                   <div class="bg-holder z-index--1 banner-bg" style="background-image:url(../../../assets/img/e-commerce/gift-items-banner-bg.png);"></div>
@@ -416,6 +427,7 @@
                 </div>
               </div>
             </div>
+
             <div class="row g-4 mb-6">
               <div class="col-12 col-lg-9 col-xxl-10">
                 <div class="d-flex flex-between-center mb-3">
@@ -855,7 +867,7 @@
               <div class="d-flex align-items-center flex-1 gap-3 border rounded-pill px-4"><input class="form-control outline-none border-0 flex-1 fs--1 px-0" type="text" placeholder="Write message" /><label class="btn btn-link d-flex p-0 text-500 fs--1 border-0" for="supportChatPhotos"><span class="fa-solid fa-image"></span></label><input class="d-none" type="file" accept="image/*" id="supportChatPhotos" /><label class="btn btn-link d-flex p-0 text-500 fs--1 border-0" for="supportChatAttachment"> <span class="fa-solid fa-paperclip"></span></label><input class="d-none" type="file" id="supportChatAttachment" /></div><button class="btn p-0 border-0 send-btn"><span class="fa-solid fa-paper-plane fs--1"></span></button>
             </div>
           </div>
-        </div><button class="btn p-0 border border-200 btn-support-chat"><span class="fs-0 btn-text text-primary text-nowrap">Chat demo</span><span class="fa-solid fa-circle text-success fs--1 ms-2"></span><span class="fa-solid fa-chevron-down text-primary fs-1"></span></button>
+        </div>
       </div>
 
       <!-- ============================================-->
@@ -904,7 +916,7 @@
     <!--    End of Main Content-->
     <!-- ===============================================-->
 
-    <div class="offcanvas offcanvas-end settings-panel border-0" id="settings-offcanvas" tabindex="-1" aria-labelledby="settings-offcanvas">
+    {{-- <div class="offcanvas offcanvas-end settings-panel border-0" id="settings-offcanvas" tabindex="-1" aria-labelledby="settings-offcanvas">
       <div class="offcanvas-header align-items-start border-bottom flex-column">
         <div class="pt-1 w-100 mb-6 d-flex justify-content-between align-items-start">
           <div>
@@ -976,13 +988,14 @@
           <div class="settings-popover"><span class="ripple"><span class="fa-spin position-absolute all-0 d-flex flex-center"><span class="icon-spin position-absolute all-0 d-flex flex-center"><svg width="20" height="20" viewBox="0 0 20 20" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"><path d="M19.7369 12.3941L19.1989 12.1065C18.4459 11.7041 18.0843 10.8487 18.0843 9.99495C18.0843 9.14118 18.4459 8.28582 19.1989 7.88336L19.7369 7.59581C19.9474 7.47484 20.0316 7.23291 19.9474 7.03131C19.4842 5.57973 18.6843 4.28943 17.6738 3.20075C17.5053 3.03946 17.2527 2.99914 17.0422 3.12011L16.393 3.46714C15.6883 3.84379 14.8377 3.74529 14.1476 3.3427C14.0988 3.31422 14.0496 3.28621 14.0002 3.25868C13.2568 2.84453 12.7055 2.10629 12.7055 1.25525V0.70081C12.7055 0.499202 12.5371 0.297594 12.2845 0.257272C10.7266 -0.105622 9.16879 -0.0653007 7.69516 0.257272C7.44254 0.297594 7.31623 0.499202 7.31623 0.70081V1.23474C7.31623 2.09575 6.74999 2.8362 5.99824 3.25599C5.95774 3.27861 5.91747 3.30159 5.87744 3.32493C5.15643 3.74527 4.26453 3.85902 3.53534 3.45302L2.93743 3.12011C2.72691 2.99914 2.47429 3.03946 2.30587 3.20075C1.29538 4.28943 0.495411 5.57973 0.0322686 7.03131C-0.051939 7.23291 0.0322686 7.47484 0.242788 7.59581L0.784376 7.8853C1.54166 8.29007 1.92694 9.13627 1.92694 9.99495C1.92694 10.8536 1.54166 11.6998 0.784375 12.1046L0.242788 12.3941C0.0322686 12.515 -0.051939 12.757 0.0322686 12.9586C0.495411 14.4102 1.29538 15.7005 2.30587 16.7891C2.47429 16.9504 2.72691 16.9907 2.93743 16.8698L3.58669 16.5227C4.29133 16.1461 5.14131 16.2457 5.8331 16.6455C5.88713 16.6767 5.94159 16.7074 5.99648 16.7375C6.75162 17.1511 7.31623 17.8941 7.31623 18.7552V19.2891C7.31623 19.4425 7.41373 19.5959 7.55309 19.696C7.64066 19.7589 7.74815 19.7843 7.85406 19.8046C9.35884 20.0925 10.8609 20.0456 12.2845 19.7729C12.5371 19.6923 12.7055 19.4907 12.7055 19.2891V18.7346C12.7055 17.8836 13.2568 17.1454 14.0002 16.7312C14.0496 16.7037 14.0988 16.6757 14.1476 16.6472C14.8377 16.2446 15.6883 16.1461 16.393 16.5227L17.0422 16.8698C17.2527 16.9907 17.5053 16.9504 17.6738 16.7891C18.7264 15.7005 19.4842 14.4102 19.9895 12.9586C20.0316 12.757 19.9474 12.515 19.7369 12.3941ZM10.0109 13.2005C8.1162 13.2005 6.64257 11.7893 6.64257 9.97478C6.64257 8.20063 8.1162 6.74905 10.0109 6.74905C11.8634 6.74905 13.3792 8.20063 13.3792 9.97478C13.3792 11.7893 11.8634 13.2005 10.0109 13.2005Z" fill="#2A7BE4"></path></svg></span></span></span></div>
         </div><small class="text-uppercase text-700 fw-bold py-2 pe-2 ps-1 rounded-end">customize</small>
       </div>
-    </a>
+    </a> --}}
 
     <!-- ===============================================-->
     <!--    JavaScripts-->
     <!-- ===============================================-->
-    <script src="{{asset('vendors/popper/popper.min.js')}}"></script>
-    <script src="{{asset('vendors/bootstrap/bootstrap.min.js')}}"></script>
+    {{-- <script src="{{asset('vendors/popper/popper.min.js')}}"></script> --}}
+    {{-- <script src="{{asset('vendors/bootstrap/bootstrap.min.js')}}"></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="{{asset('vendors/anchorjs/anchor.min.js')}}"></script>
     <script src="{{asset('vendors/is/is.min.js')}}"></script>
     <script src="{{asset('vendors/fontawesome/all.min.js')}}"></script>
