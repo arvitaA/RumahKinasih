@@ -76,64 +76,59 @@
             <ul class="navbar-nav flex-column" id="navbarVerticalNav">
               <li class="nav-item">
                 <!-- label-->
-                <p class="navbar-vertical-label">Apps</p>
-                <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-e-commerce" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="nv-e-commerce">
+                <p class="navbar-vertical-label">ADMIN WIP</p>
+                <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-e-commerce" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-data-produk">
                     <div class="d-flex align-items-center">
-                      <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="archive"></span></span><span class="nav-link-text">Data Produk</span>
+                      <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="archive"></span></span><span class="nav-link-text">Data Produk WIP</span>
                     </div>
                   </a>
                   <div class="parent-wrapper label-1">
-                    <ul class="nav collapse parent show" data-bs-parent="#navbarVerticalCollapse" id="nv-e-commerce">
+                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-e-commerce">
                       <li class="collapsed-nav-item-title d-none">E commerce</li>
-                      <li class="nav-item"><a class="nav-link active" href="products.html" data-bs-toggle="" aria-expanded="false">
+                      <li class="nav-item"><a class="nav-link" href="{{url('/kain')}}" data-bs-toggle="" aria-expanded="false">
                         <div class="d-flex align-items-center"><span class="nav-link-text">Kain Batik</span></div>
                       </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="products.html" data-bs-toggle="" aria-expanded="false">
+                      <li class="nav-item"><a class="nav-link" href="{{url('/batik')}}" data-bs-toggle="" aria-expanded="false">
                         <div class="d-flex align-items-center"><span class="nav-link-text">Batik</span></div>
                       </a><!-- more inner pages-->
                       </li>
                     </ul>
                   </div>
                 </div><!-- parent pages-->
-                <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-e-commerce" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="nv-e-commerce">
-                    <div class="d-flex align-items-center">
-                      <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="database"></span></span><span class="nav-link-text">Data Transaksi</span>
-                    </div>
-                  </a>
-                  <div class="parent-wrapper label-1">
-                    <ul class="nav collapse parent show" data-bs-parent="#navbarVerticalCollapse" id="nv-e-commerce">
-                      <li class="collapsed-nav-item-title d-none">E commerce</li>
-                      <li class="nav-item"><a class="nav-link" href="products.html" data-bs-toggle="" aria-expanded="false">
+                <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-project-management" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="nv-project-management">
+                  <div class="d-flex align-items-center">
+                    <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="database"></span></span><span class="nav-link-text">Data Transaksi WIP</span>
+                  </div>
+                </a>
+                <div class="parent-wrapper label-1">
+                  <ul class="nav collapse parent show" data-bs-parent="#navbarVerticalCollapse" id="nv-project-management">
+                    <li class="collapsed-nav-item-title d-none">Project management</li>
+                    <li class="nav-item"><a class="nav-link active" href="{{url('/transaksi')}}" data-bs-toggle="" aria-expanded="false">
                         <div class="d-flex align-items-center"><span class="nav-link-text">Transaksi</span></div>
                       </a><!-- more inner pages-->
-                      </li>
-                      <li class="nav-item"><a class="nav-link" href="products.html" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Detail Transaksi</span></div>
-                      </a><!-- more inner pages-->
-                      </li>
-                    </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+                <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-email" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-email">
+                  <div class="d-flex align-items-center">
+                    <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="mail"></span></span><span class="nav-link-text">Admin & User WIP</span>
                   </div>
-                </div><!-- parent pages-->
-                <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-e-commerce" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="nv-e-commerce">
-                    <div class="d-flex align-items-center">
-                      <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="database"></span></span><span class="nav-link-text">Admin & User</span>
-                    </div>
-                  </a>
+                </a>
                   <div class="parent-wrapper label-1">
-                    <ul class="nav collapse parent show" data-bs-parent="#navbarVerticalCollapse" id="nv-e-commerce">
-                      <li class="collapsed-nav-item-title d-none">E commerce</li>
-                      <li class="nav-item"><a class="nav-link" href="products.html" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Admin</span></div>
-                      </a><!-- more inner pages-->
+                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-email">
+                      <li class="nav-item"><a class="nav-link" href="../../email/inbox.html" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center"><span class="nav-link-text">Admin</span></div>
+                        </a><!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="products.html" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">User</span></div>
-                      </a><!-- more inner pages-->
+                      <li class="nav-item"><a class="nav-link" href="../../email/email-detail.html" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center"><span class="nav-link-text">User</span></div>
+                        </a><!-- more inner pages-->
                       </li>
                     </ul>
                   </div>
-                </div><!-- parent pages-->
+                </div>
               </li>
             </ul>
           </div>
@@ -4338,18 +4333,18 @@
         <div class="mb-9">
           <div class="row g-3 mb-4">
             <div class="col-auto">
-              <h2 class="mb-0">Kain Batik</h2>
+              <h2 class="mb-0">Transaksi</h2>
             </div>
           </div>
           <div id="products" data-list='{"valueNames":["product","price","category","tags","vendor","time"],"page":10,"pagination":true}'>
             <div class="mb-4">
               <div class="d-flex flex-wrap gap-3">
                 <div class="search-box">
-                  <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input search" type="search" placeholder="Cari Kain..." aria-label="Search" />
+                  <form class="position-relative" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input search" type="search" placeholder="Cari Transaksi..." aria-label="Search" />
                     <span class="fas fa-search search-box-icon"></span>
                   </form>
                 </div>
-                <div class="ms-xxl-auto"><button class="btn btn-primary" id="addBtn"><span class="fas fa-plus me-2"></span>Tambah Kain</button></div>
+                <div class="ms-xxl-auto"><button class="btn btn-primary" id="addBtn"><span class="fas fa-plus me-2"></span>Tambah Transaksi</button></div>
               </div>
             </div>
             <div class="mx-n4 px-4 mx-lg-n6 px-lg-6 bg-white border-top border-bottom border-200 position-relative top-1">
@@ -4358,7 +4353,7 @@
                   <thead>
                     <tr>
                       <th class="sort white-space-nowrap align-middle" scope="col" style="width:30px;" data-sort="number">NO</th>
-                      <th class="sort white-space-nowrap align-middle ps-4" scope="col" style="width:350px;" data-sort="product">NAMA KAIN</th>
+                      <th class="sort white-space-nowrap align-middle ps-4" scope="col" style="width:200px;" data-sort="product">NAMA KAIN</th>
                       <th class="sort align-middle text-end ps-4" scope="col" data-sort="price" style="width:150px;">HARGA SATUAN</th>
                       <th class="sort align-middle ps-4" scope="col" data-sort="time" style="width:50px;">TANGGAL DITAMBAHKAN</th>
                       <th class="sort text-end align-middle pe-0 ps-4" scope="col"></th>

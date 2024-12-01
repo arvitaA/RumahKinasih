@@ -19,9 +19,18 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('homepage');
 });
-Route::get('/product', function () {
-    return view('product');
+Route::get('/kain', function () {
+    return view('admin_kain');
+});
+Route::get('/batik', function () {
+    return view('admin_batik');
+});
+Route::get('/transaksi', function () {
+    return view('admin_transaksi');
 });
 Route::get('/test', function () {
     return view('testview');
+});
+Route::get('/testadmin', function () {
+    return view('testadmin');
 });
