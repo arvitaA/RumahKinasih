@@ -17,10 +17,10 @@ Route::get('/', function () {
     return view('landingpage');
 });
 Route::get('/home', function () {
-    return view('homepage');
+    return view('admin.kategori.index');
 });
 Route::get('/kain', function () {
-    return view('admin_kain');
+    return view('admin.layout.app');
 });
 Route::get('/batik', function () {
     return view('admin_batik');
